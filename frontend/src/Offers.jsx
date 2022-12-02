@@ -18,22 +18,22 @@ function Offers() {
     <div className='what-we-offer-section' id='offers'>
           <h2 className='what-we-offer'>WHAT WE OFFER</h2>
           <div className="offers-container">
-            <div className='card'>
-                <img data-aos="flip-up" className="bus" src={bus} />
+            <div data-aos="zoom-in" className='card'>
+                <img  className="bus" src={bus} />
                 <span>Transport</span>
                 <span className='offer-description'>
                     Curabitur nec eros condimentum, ullamcorper sem id, posuere tellus
                 </span>
             </div>
-            <div className='card'>
-                <img  data-aos="flip-up" className="guide" src={guide} />
+            <div data-aos="zoom-in" className='card'>
+                <img   className="guide" src={guide} />
                 <span>Guided Tour</span>
                 <span className='offer-description'>
                     Curabitur nec eros condimentum, ullamcorper sem id, posuere tellus
                 </span>
             </div>
-            <div className='card'>
-                <img data-aos="flip-up" className="wine" src={wine} />
+            <div data-aos="zoom-in" className='card'>
+                <img className="wine" src={wine} />
                 <span>Wine Tasting</span>
                 <span className='offer-description'>
                     Curabitur nec eros condimentum, ullamcorper sem id, posuere tellus
