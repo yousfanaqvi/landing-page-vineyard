@@ -1,11 +1,16 @@
 import React from "react";
+import Intro from "./Intro";
 import Home from "./Home"
-import Nav from "./Nav";
+import {BrowserRouter as Router, Routes,Route, useLocation} from "react-router-dom"
+
 const App = () => {
   return (
     <div>
-    <Nav/>
-    <Home/>
+      <Routes>
+        <Route path="/" element={<Intro/>}/>
+        <Route path="/Home" element={<Home/>}/>
+      </Routes>    
+    
     </div>
   );
 };

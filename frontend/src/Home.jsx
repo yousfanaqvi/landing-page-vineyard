@@ -8,15 +8,19 @@ import Contact from './Contact'
 import {motion,useScroll} from "framer-motion"
 import "./Home.css"
 import "animate.css"
+import Nav from "./Nav"
+
 function Home() {
     const { scrollYProgress } = useScroll();
 
-     return (
-    <div className='Main-container' id='home'>
-    <motion.div
-    className="progress-bar"
-    style={{ scaleX: scrollYProgress }}/>
-    <div className='background animate__animated animate__slow animate__zoomIn'></div>
+     return ( 
+     <>
+        <Nav/>
+        <div className='Main-container' id='home'>
+        <motion.div
+        className="progress-bar"
+        style={{ scaleX: scrollYProgress }}/>
+        <div className='background animate__animated animate__slow animate__zoomIn'></div>
         <div className='hero-section'>
             <img className='logo' src={logo}/>
             <span className="visit-exquisite-vine animate__animated animate__slow animate__fadeInDown animate__delay-1s" >
@@ -31,11 +35,11 @@ function Home() {
                 <img src={vector} />
             </Link>
         </div>
-    <Offers/>
-    <Price/>
-    <Contact/>
-        
-    </div>
+        <Offers/>
+        <Price/>
+        <Contact/>
+        </div>
+    </>
   )
 }
 
