@@ -69,15 +69,22 @@ function Contact() {
           </article>
         </div>
         <form ref={form} onSubmit={sendEmail}>
+        <label>Name
           <input type="text" name="name" placeholder="Enter your name"
            required/>
+        </label>
+        <label>Email
           <input type="email" name="email" placeholder='Enter your email'
            required/>
-          <textarea name="message" rows="10" placeholder="Enter message" 
-           required></textarea>
-          <div  align="right">
+        </label>
+        <label>Message
+          <textarea name="message" rows="10" placeholder="Enter message" id="textarea"
+           required>
+           </textarea>
+        </label>
+        <div  align="right">
           <button type='submit' name="submit" className='reserve-button ' >Send Message</button>
-          </div>
+        </div>
         </form>
         <Dialog
         open={open}

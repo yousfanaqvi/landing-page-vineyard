@@ -18,6 +18,7 @@
     /* height: max-content; */
     justify-content: center;
     align-items: center;
+    margin-bottom: 5rem;
 }
 
 .contact-form{
@@ -91,7 +92,7 @@ a{
 }
 
 input,textarea{
-    width :300px;
+    width :100%;
     padding: 1rem;
     border-radius: 0.5rem;
     background:transparent;
@@ -99,6 +100,7 @@ input,textarea{
     resize: none;
     color: white;
 }
+
  input:hover,textarea:hover{
     background: #685e45;
  }

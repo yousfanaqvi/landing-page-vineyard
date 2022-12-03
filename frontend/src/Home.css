@@ -296,15 +296,19 @@ nav{
       position: absolute;
       top:0.1rem;
     }
+    .what-we-offer {
+      font-size: 62px;
+    }
 }
 @media only screen 
   and (min-device-width: 600px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
-
-
-    .offers-container, .contact-container,.price-cards{
+  .offers-container, .contact-container,.price-cards{
       flex-direction: column;
+  }
+  .price-section{
+    padding: 1rem;
   }
   .what-we-offer-section,.price-section,.contact-section{
     height: 100%;

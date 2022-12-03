@@ -20,7 +20,7 @@ function Home() {
         style={{ scaleX: scrollYProgress }}/>
         <div className='background'></div>
         <div className='hero-section'>
-            <img className='logo' src={logo}/>
+            <img className='logo animate__animated animate__slow animate__fadeInDown' src={logo}/>
             <span className="visit-exquisite-vine animate__animated animate__slow animate__fadeInDown animate__delay-1s" >
                 Visit exquisite vineyards across the country.
             </span>

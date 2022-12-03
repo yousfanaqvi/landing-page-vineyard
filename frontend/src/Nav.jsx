@@ -5,7 +5,7 @@ export default function Nav() {
 
   return (
     <div>
-      <nav className='animate__animated animate__fadeInDown animate__slow' >
+      <nav className='animate__animated animate__fadeInDown animate__slow animate__delay-2s' >
         
           <Link to='home' spy={true}  >Home</Link>
         
