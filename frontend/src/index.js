@@ -1,4 +1,4 @@
-import React, {Suspense} from 'react';
+import React from 'react';
 import App from "./App"
 import "./index.css"
 import { createRoot } from 'react-dom/client';
@@ -9,12 +9,11 @@ const root = createRoot(container);
 
  
 root.render(
-  <Suspense fallback={<p>Loading...</p>}>
     <React.StrictMode>
       <BrowserRouter>
         <App/>
         </BrowserRouter>
     
     </React.StrictMode>
-    </Suspense>);
+    );
 

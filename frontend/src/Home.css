@@ -44,12 +44,12 @@ nav{
   display: flex;
   
 }
-.background{
+#background{
     object-fit: cover;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    background-image: url("./assets/frame1.jpg");
+    /* background-image: url("./assets/frame1.jpg"); */
     position: fixed;
     height: 100%;
     width: 100%;
