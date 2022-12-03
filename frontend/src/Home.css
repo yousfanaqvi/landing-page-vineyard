@@ -297,6 +297,19 @@ nav{
       top:0.1rem;
     }
 }
+@media only screen 
+  and (min-device-width: 600px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+
+    .offers-container, .contact-container,.price-cards{
+      flex-direction: column;
+  }
+  .what-we-offer-section,.price-section,.contact-section{
+    height: 100%;
+  }
+  }
 /*.....small devices.... */
 
 @media screen and (max-width:600px){
