@@ -13,16 +13,16 @@ import "animate.css"
 function Home() {
     const { scrollYProgress } = useScroll();
 
-    useEffect(() => {
-        document.getElementById("background").style.backgroundImage = `url('${bImage}')`;
-      }, []);
+    // useEffect(() => {
+    //     document.getElementById("background").style.backgroundImage = `url('${bImage}')`;
+    //   }, []);
      return ( 
      <>
         <div className='Main-container' id='home'>
         <motion.div
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}/>
-        <div id='background'></div>
+        <img  src={bImage}id='background'></img>
         <div className='hero-section'>
             <img className='logo animate__animated animate__slow animate__fadeInDown' src={logo}/>
             <span className="visit-exquisite-vine animate__animated animate__slow animate__fadeInDown animate__delay-1s" >
